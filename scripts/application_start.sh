@@ -15,5 +15,8 @@ export NVM_DIR="$HOME/.nvm"
 #install node modules
 npm install
 
+#stop our node app
+pm2 stop all
+
 #start our node app in the background
 pm2 start ./src/app.ts --watch
