@@ -13,3 +13,6 @@ nvm install node
 #   echo "Creating ${DIR} directory"
 #   mkdir ${DIR}
 # fi
+if [ -f .env ]; then
+  export $(echo $(cat .env | sed 's/#.*//g'| xargs) | envsubst)
+fi
