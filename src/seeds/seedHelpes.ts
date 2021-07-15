@@ -1,429 +1,447 @@
-export const categories = [
-  {   
-    "name": "Action (set A)",
-    "image": "../../img/cry.jpg",
-    "uniqueKey": "1"  
-  },
-  {   
-    "name": "Action (set B)",
-    "image": "../../img/point.jpg",
-    "uniqueKey": "2"  
-  },
-  {   
-    "name": "Animal (set A)",
-    "image": "../../img/cat.jpg",
-    "uniqueKey": "3"  
-  },
-  {   
-    "name": "Action (set B)",
-    "image": "../../img/chicken.jpg",
-    "uniqueKey": "4"  
-  },
-  {   
-    "name": "Clothes",
-    "image": "../../img/fish.jpg",
-    "uniqueKey": "5"  
-  },
-  {   
-    "name": "Emotions",
-    "image": "../../img/fly.jpg",
-    "uniqueKey": "6"  
-  },
-  {   
-    "name": "Berries",
-    "image": "../../img/hug.jpg",
-    "uniqueKey": "7"  
-  },
-  {   
-    "name": "Furniture",
-    "image": "../../img/jump.jpg",
-    "uniqueKey": "8"  
-  },
-]
+const basePath = 'http://18.116.33.61:3005';
 
-export const cards = [[
+export const categories = [
   {
-    "word": "cry",
-    "translation": "плакать",
-    "imageSrc": "../../../../img/cry.jpg",
-    "audioSrc": "../../../../audio/cry.wav"
+    name: 'Action (set A)',
+    image: `${basePath}/cry.jpg`,
+    uniqueKey: '1',
   },
   {
-    "word": "dance",
-    "translation": "танцевать",
-    "imageSrc": "../../img/dance.jpg",
-    "audioSrc": "../../audio/dance.wav"
+    name: 'Action (set B)',
+    image: `${basePath}/point.jpg`,
+    uniqueKey: '2',
   },
   {
-    "word": "dive",
-    "translation": "нырять",
-    "imageSrc": "../../img/dive.jpg",
-    "audioSrc": "../../audio/dive.wav"
+    name: 'Animal (set A)',
+    image: `${basePath}/cat.jpg`,
+    uniqueKey: '3',
   },
   {
-    "word": "draw",
-    "translation": "рисовать",
-    "imageSrc": "../../img/draw.jpg",
-    "audioSrc": "../../audio/draw.wav"
+    name: 'Action (set B)',
+    image: `${basePath}/chicken.jpg`,
+    uniqueKey: '4',
   },
   {
-    "word": "fish",
-    "translation": "ловить рыбу",
-    "imageSrc": "../../img/fish.jpg",
-    "audioSrc": "../../audio/fish.wav"
+    name: 'Clothes',
+    image: `${basePath}/fish.jpg`,
+    uniqueKey: '5',
   },
   {
-    "word": "fly",
-    "translation": "летать",
-    "imageSrc": "../../img/fly.jpg",
-    "audioSrc": "../../audio/fly.wav"
+    name: 'Emotions',
+    image: `${basePath}/fly.jpg`,
+    uniqueKey: '6',
   },
   {
-    "word": "hug",
-    "translation": "обнимать",
-    "imageSrc": "../../img/hug.jpg",
-    "audioSrc": "../../audio/hug.wav"
+    name: 'Berries',
+    image: `${basePath}/hug.jpg`,
+    uniqueKey: '7',
   },
   {
-    "word": "jump",
-    "translation": "прыгать",
-    "imageSrc": "../../img/jump.jpg",
-    "audioSrc": "../../audio/jump.wav"
-  }],
-  [{
-    "word": "open",
-    "translation": "открывать",
-    "imageSrc": "../../img/open.jpg",
-    "audioSrc": "../../audio/open.wav"
+    name: 'Furniture',
+    image: `${basePath}/jump.jpg`,
+    uniqueKey: '8',
   },
-  {
-    "word": "play",
-    "translation": "играть",
-    "imageSrc": "../../img/play.jpg",
-    "audioSrc": "../../audio/play.wav"
-  },
-  {
-    "word": "point",
-    "translation": "указывать",
-    "imageSrc": "../../img/point.jpg",
-    "audioSrc": "../../audio/point.wav"
-  },
-  {
-    "word": "ride",
-    "translation": "ездить",
-    "imageSrc": "../../img/ride.jpg",
-    "audioSrc": "../../audio/ride.wav"
-  },
-  {
-    "word": "run",
-    "translation": "бегать",
-    "imageSrc": "../../img/run.jpg",
-    "audioSrc": "../../audio/run.wav"
-  },
-  {
-    "word": "sing",
-    "translation": "петь",
-    "imageSrc": "../../img/sing.jpg",
-    "audioSrc": "../../audio/sing.wav"
-  },
-  {
-    "word": "skip",
-    "translation": "пропускать, прыгать",
-    "imageSrc": "../../img/skip.jpg",
-    "audioSrc": "../../audio/skip.wav"
-  },
-  {
-    "word": "swim",
-    "translation": "плавать",
-    "imageSrc": "../../img/swim.jpg",
-    "audioSrc": "../../audio/swim.wav"
-  }],
-  [{
-    "word": "cat",
-    "translation": "кот",
-    "imageSrc": "../../img/cat.jpg",
-    "audioSrc": "../../audio/cat.wav"
-  },
-  {
-    "word": "chick",
-    "translation": "цыплёнок",
-    "imageSrc": "../../img/chick.jpg",
-    "audioSrc": "../../audio/chick.wav"
-  },
-  {
-    "word": "chicken",
-    "translation": "курица",
-    "imageSrc": "../../img/chicken.jpg",
-    "audioSrc": "../../audio/chicken.wav"
-  },
-  {
-    "word": "dog",
-    "translation": "собака",
-    "imageSrc": "../../img/dog.jpg",
-    "audioSrc": "../../audio/dog.wav"
-  },
-  {
-    "word": "horse",
-    "translation": "лошадь",
-    "imageSrc": "../../img/horse.jpg",
-    "audioSrc": "../../audio/horse.wav"
-  },
-  {
-    "word": "pig",
-    "translation": "свинья",
-    "imageSrc": "../../img/pig.jpg",
-    "audioSrc": "../../audio/pig.wav"
-  },
-  {
-    "word": "rabbit",
-    "translation": "кролик",
-    "imageSrc": "../../img/rabbit.jpg",
-    "audioSrc": "../../audio/rabbit.wav"
-  },
-  {
-    "word": "sheep",
-    "translation": "овца",
-    "imageSrc": "../../img/sheep.jpg",
-    "audioSrc": "../../audio/sheep.wav"
-  }],
-  [{
-    "word": "bird",
-    "translation": "птица",
-    "imageSrc": "../../img/bird.jpg",
-    "audioSrc": "../../audio/bird.wav"
-  },
-  {
-    "word": "fish",
-    "translation": "рыба",
-    "imageSrc": "../../img/fish1.jpg",
-    "audioSrc": "../../audio/fish-a.wav"
-  },
-  {
-    "word": "frog",
-    "translation": "жаба",
-    "imageSrc": "../../img/frog.jpg",
-    "audioSrc": "../../audio/frog.wav"
-  },
-  {
-    "word": "giraffe",
-    "translation": "жирафа",
-    "imageSrc": "../../img/giraffe.jpg",
-    "audioSrc": "../../audio/giraffe.wav"
-  },
-  {
-    "word": "lion",
-    "translation": "лев",
-    "imageSrc": "../../img/lion.jpg",
-    "audioSrc": "../../audio/lion.wav"
-  },
-  {
-    "word": "mouse",
-    "translation": "мышь",
-    "imageSrc": "../../img/mouse.jpg",
-    "audioSrc": "../../audio/mouse.wav"
-  },
-  {
-    "word": "turtle",
-    "translation": "черепаха",
-    "imageSrc": "../../img/turtle.jpg",
-    "audioSrc": "../../audio/turtle.wav"
-  },
-  {
-    "word": "dolphin",
-    "translation": "дельфин",
-    "imageSrc": "../../img/dolphin.jpg",
-    "audioSrc": "../../audio/dolphin.wav"
-  }],
-  [{
-    "word": "skirt",
-    "translation": "юбка",
-    "imageSrc": "../../img/skirt.jpg",
-    "audioSrc": "../../audio/skirt.wav"
-  },
-  {
-    "word": "pants",
-    "translation": "брюки",
-    "imageSrc": "../../img/pants.jpg",
-    "audioSrc": "../../audio/pants.wav"
-  },
-  {
-    "word": "blouse",
-    "translation": "блузка",
-    "imageSrc": "../../img/blouse.jpg",
-    "audioSrc": "../../audio/blouse.wav"
-  },
-  {
-    "word": "dress",
-    "translation": "платье",
-    "imageSrc": "../../img/dress.jpg",
-    "audioSrc": "../../audio/dress.wav"
-  },
-  {
-    "word": "boot",
-    "translation": "ботинок",
-    "imageSrc": "../../img/boot.jpg",
-    "audioSrc": "../../audio/boot.wav"
-  },
-  {
-    "word": "shirt",
-    "translation": "рубашка",
-    "imageSrc": "../../img/shirt.jpg",
-    "audioSrc": "../../audio/shirt.wav"
-  },
-  {
-    "word": "coat",
-    "translation": "пальто",
-    "imageSrc": "../../img/coat.jpg",
-    "audioSrc": "../../audio/coat.wav"
-  },
-  {
-    "word": "shoe",
-    "translation": "туфли",
-    "imageSrc": "../../img/shoe.jpg",
-    "audioSrc": "../../audio/shoe.wav"
-  }],
-  [{
-    "word": "sad",
-    "translation": "грустный",
-    "imageSrc": "../../img/sad.jpg",
-    "audioSrc": "../../audio/sad.wav"
-  },
-  {
-    "word": "angry",
-    "translation": "сердитый",
-    "imageSrc": "../../img/angry.jpg",
-    "audioSrc": "../../audio/angry.wav"
-  },
-  {
-    "word": "happy",
-    "translation": "счастливый",
-    "imageSrc": "../../img/happy.jpg",
-    "audioSrc": "../../audio/happy.wav"
-  },
-  {
-    "word": "tired",
-    "translation": "уставший",
-    "imageSrc": "../../img/tired.jpg",
-    "audioSrc": "../../audio/tired.wav"
-  },
-  {
-    "word": "surprised",
-    "translation": "удивлённый",
-    "imageSrc": "../../img/surprised.jpg",
-    "audioSrc": "../../audio/surprised.wav"
-  },
-  {
-    "word": "scared",
-    "translation": "испуганный",
-    "imageSrc": "../../img/scared.jpg",
-    "audioSrc": "../../audio/scared.wav"
-  },
-  {
-    "word": "smile",
-    "translation": "улыбка",
-    "imageSrc": "../../img/smile.jpg",
-    "audioSrc": "../../audio/smile.wav"
-  },
-  {
-    "word": "laugh",
-    "translation": "смех",
-    "imageSrc": "../../img/laugh.jpg",
-    "audioSrc": "../../audio/laugh.wav"
-  }],
-  [{
-    "word": "cranberry",
-    "translation": "клюква",
-    "imageSrc": "../../img/cranberry.jpg",
-    "audioSrc": "../../audio/cranberry.wav"
-  },
-  {
-    "word": "blueberry",
-    "translation": "черника",
-    "imageSrc": "../../img/blueberry.jpg",
-    "audioSrc": "../../audio/blueberry.wav"
-  },
-  {
-    "word": "elderberry",
-    "translation": "бузина",
-    "imageSrc": "../../img/elderberry.jpg",
-    "audioSrc": "../../audio/elderberry.wav"
-  },
-  {
-    "word": "gooseberry",
-    "translation": "крыжовник",
-    "imageSrc": "../../img/gooseberry.jpg",
-    "audioSrc": "../../audio/gooseberry.wav"
-  },
-  {
-    "word": "currant",
-    "translation": "клюква",
-    "imageSrc": "../../img/currant.jpg",
-    "audioSrc": "../../audio/currant.wav"
-  },
-  {
-    "word": "strawberry",
-    "translation": "клубника",
-    "imageSrc": "../../img/strawberry.jpg",
-    "audioSrc": "../../audio/strawberry.wav"
-  },
-  {
-    "word": "blackberry",
-    "translation": "ежевика",
-    "imageSrc": "../../img/blackberry.jpg",
-    "audioSrc": "../../audio/blackberry.wav"
-  },
-  {
-    "word": "physalis",
-    "translation": "физалис",
-    "imageSrc": "../../img/physalis.jpg",
-    "audioSrc": "../../audio/physalis.wav"
-  }],
-  [{
-    "word": "bed",
-    "translation": "кровать",
-    "imageSrc": "../../img/bed.jpg",
-    "audioSrc": "../../audio/bed.wav"
-  },
-  {
-    "word": "sofa",
-    "translation": "диван",
-    "imageSrc": "../../img/sofa.jpg",
-    "audioSrc": "../../audio/sofa.wav"
-  },
-  {
-    "word": "carpet",
-    "translation": "ковёр",
-    "imageSrc": "../../img/carpet.jpg",
-    "audioSrc": "../../audio/carpet.wav"
-  },
-  {
-    "word": "chair",
-    "translation": "стул",
-    "imageSrc": "../../img/chair.jpg",
-    "audioSrc": "../../audio/chair.wav"
-  },
-  {
-    "word": "table",
-    "translation": "стол",
-    "imageSrc": "../../img/table.jpg",
-    "audioSrc": "../../audio/table.wav"
-  },
-  {
-    "word": "armchair",
-    "translation": "кресло",
-    "imageSrc": "../../img/armchair.jpg",
-    "audioSrc": "../../audio/armchair.wav"
-  },
-  {
-    "word": "picture",
-    "translation": "картина",
-    "imageSrc": "../../img/picture.jpg",
-    "audioSrc": "../../audio/picture.wav"
-  },
-  {
-    "word": "floor lamp",
-    "translation": "напольная лампа",
-    "imageSrc": "../../img/floorlamp.jpg",
-    "audioSrc": "../../audio/floorlamp.wav"
-  }],
-]
+];
+
+export const cards = [
+  [
+    {
+      word: 'cry',
+      translation: 'плакать',
+      imageSrc: `${basePath}/cry.jpg`,
+      audioSrc: `${basePath}/cry.wav`,
+    },
+    {
+      word: 'dance',
+      translation: 'танцевать',
+      imageSrc: `${basePath}/dance.jpg`,
+      audioSrc: `${basePath}/dance.wav`,
+    },
+    {
+      word: 'dive',
+      translation: 'нырять',
+      imageSrc: `${basePath}/dive.jpg`,
+      audioSrc: `${basePath}/dive.wav`,
+    },
+    {
+      word: 'draw',
+      translation: 'рисовать',
+      imageSrc: `${basePath}/draw.jpg`,
+      audioSrc: `${basePath}/draw.wav`,
+    },
+    {
+      word: 'fish',
+      translation: 'ловить рыбу',
+      imageSrc: `${basePath}/fish.jpg`,
+      audioSrc: `${basePath}/fish.wav`,
+    },
+    {
+      word: 'fly',
+      translation: 'летать',
+      imageSrc: `${basePath}/fly.jpg`,
+      audioSrc: `${basePath}/fly.wav`,
+    },
+    {
+      word: 'hug',
+      translation: 'обнимать',
+      imageSrc: `${basePath}/hug.jpg`,
+      audioSrc: `${basePath}/hug.wav`,
+    },
+    {
+      word: 'jump',
+      translation: 'прыгать',
+      imageSrc: `${basePath}/jump.jpg`,
+      audioSrc: `${basePath}/jump.wav`,
+    },
+  ],
+  [
+    {
+      word: 'open',
+      translation: 'открывать',
+      imageSrc: `${basePath}/open.jpg`,
+      audioSrc: `${basePath}/open.wav`,
+    },
+    {
+      word: 'play',
+      translation: 'играть',
+      imageSrc: `${basePath}/play.jpg`,
+      audioSrc: `${basePath}/play.wav`,
+    },
+    {
+      word: 'point',
+      translation: 'указывать',
+      imageSrc: `${basePath}/point.jpg`,
+      audioSrc: `${basePath}/point.wav`,
+    },
+    {
+      word: 'ride',
+      translation: 'ездить',
+      imageSrc: `${basePath}/ride.jpg`,
+      audioSrc: `${basePath}/ride.wav`,
+    },
+    {
+      word: 'run',
+      translation: 'бегать',
+      imageSrc: `${basePath}/run.jpg`,
+      audioSrc: `${basePath}/run.wav`,
+    },
+    {
+      word: 'sing',
+      translation: 'петь',
+      imageSrc: `${basePath}/sing.jpg`,
+      audioSrc: `${basePath}/sing.wav`,
+    },
+    {
+      word: 'skip',
+      translation: 'пропускать, прыгать',
+      imageSrc: `${basePath}/skip.jpg`,
+      audioSrc: `${basePath}/skip.wav`,
+    },
+    {
+      word: 'swim',
+      translation: 'плавать',
+      imageSrc: `${basePath}/swim.jpg`,
+      audioSrc: `${basePath}/swim.wav`,
+    },
+  ],
+  [
+    {
+      word: 'cat',
+      translation: 'кот',
+      imageSrc: `${basePath}/cat.jpg`,
+      audioSrc: `${basePath}/cat.wav`,
+    },
+    {
+      word: 'chick',
+      translation: 'цыплёнок',
+      imageSrc: `${basePath}/chick.jpg`,
+      audioSrc: `${basePath}/chick.wav`,
+    },
+    {
+      word: 'chicken',
+      translation: 'курица',
+      imageSrc: `${basePath}/chicken.jpg`,
+      audioSrc: `${basePath}/chicken.wav`,
+    },
+    {
+      word: 'dog',
+      translation: 'собака',
+      imageSrc: `${basePath}/dog.jpg`,
+      audioSrc: `${basePath}/dog.wav`,
+    },
+    {
+      word: 'horse',
+      translation: 'лошадь',
+      imageSrc: `${basePath}/horse.jpg`,
+      audioSrc: `${basePath}/horse.wav`,
+    },
+    {
+      word: 'pig',
+      translation: 'свинья',
+      imageSrc: `${basePath}/pig.jpg`,
+      audioSrc: `${basePath}/pig.wav`,
+    },
+    {
+      word: 'rabbit',
+      translation: 'кролик',
+      imageSrc: `${basePath}/rabbit.jpg`,
+      audioSrc: `${basePath}/rabbit.wav`,
+    },
+    {
+      word: 'sheep',
+      translation: 'овца',
+      imageSrc: `${basePath}/sheep.jpg`,
+      audioSrc: `${basePath}/sheep.wav`,
+    },
+  ],
+  [
+    {
+      word: 'bird',
+      translation: 'птица',
+      imageSrc: `${basePath}/bird.jpg`,
+      audioSrc: `${basePath}/bird.wav`,
+    },
+    {
+      word: 'fish',
+      translation: 'рыба',
+      imageSrc: `${basePath}/fish1.jpg`,
+      audioSrc: `${basePath}/fish-a.wav`,
+    },
+    {
+      word: 'frog',
+      translation: 'жаба',
+      imageSrc: `${basePath}/frog.jpg`,
+      audioSrc: `${basePath}/frog.wav`,
+    },
+    {
+      word: 'giraffe',
+      translation: 'жирафа',
+      imageSrc: `${basePath}/giraffe.jpg`,
+      audioSrc: `${basePath}/giraffe.wav`,
+    },
+    {
+      word: 'lion',
+      translation: 'лев',
+      imageSrc: `${basePath}/lion.jpg`,
+      audioSrc: `${basePath}/lion.wav`,
+    },
+    {
+      word: 'mouse',
+      translation: 'мышь',
+      imageSrc: `${basePath}/mouse.jpg`,
+      audioSrc: `${basePath}/mouse.wav`,
+    },
+    {
+      word: 'turtle',
+      translation: 'черепаха',
+      imageSrc: `${basePath}/turtle.jpg`,
+      audioSrc: `${basePath}/turtle.wav`,
+    },
+    {
+      word: 'dolphin',
+      translation: 'дельфин',
+      imageSrc: `${basePath}/dolphin.jpg`,
+      audioSrc: `${basePath}/dolphin.wav`,
+    },
+  ],
+  [
+    {
+      word: 'skirt',
+      translation: 'юбка',
+      imageSrc: `${basePath}/skirt.jpg`,
+      audioSrc: `${basePath}/skirt.wav`,
+    },
+    {
+      word: 'pants',
+      translation: 'брюки',
+      imageSrc: `${basePath}/pants.jpg`,
+      audioSrc: `${basePath}/pants.wav`,
+    },
+    {
+      word: 'blouse',
+      translation: 'блузка',
+      imageSrc: `${basePath}/blouse.jpg`,
+      audioSrc: `${basePath}/blouse.wav`,
+    },
+    {
+      word: 'dress',
+      translation: 'платье',
+      imageSrc: `${basePath}/dress.jpg`,
+      audioSrc: `${basePath}/dress.wav`,
+    },
+    {
+      word: 'boot',
+      translation: 'ботинок',
+      imageSrc: `${basePath}/boot.jpg`,
+      audioSrc: `${basePath}/boot.wav`,
+    },
+    {
+      word: 'shirt',
+      translation: 'рубашка',
+      imageSrc: `${basePath}/shirt.jpg`,
+      audioSrc: `${basePath}/shirt.wav`,
+    },
+    {
+      word: 'coat',
+      translation: 'пальто',
+      imageSrc: `${basePath}/coat.jpg`,
+      audioSrc: `${basePath}/coat.wav`,
+    },
+    {
+      word: 'shoe',
+      translation: 'туфли',
+      imageSrc: `${basePath}/shoe.jpg`,
+      audioSrc: `${basePath}/shoe.wav`,
+    },
+  ],
+  [
+    {
+      word: 'sad',
+      translation: 'грустный',
+      imageSrc: `${basePath}/sad.jpg`,
+      audioSrc: `${basePath}/sad.wav`,
+    },
+    {
+      word: 'angry',
+      translation: 'сердитый',
+      imageSrc: `${basePath}/angry.jpg`,
+      audioSrc: `${basePath}/angry.wav`,
+    },
+    {
+      word: 'happy',
+      translation: 'счастливый',
+      imageSrc: `${basePath}/happy.jpg`,
+      audioSrc: `${basePath}/happy.wav`,
+    },
+    {
+      word: 'tired',
+      translation: 'уставший',
+      imageSrc: `${basePath}/tired.jpg`,
+      audioSrc: `${basePath}/tired.wav`,
+    },
+    {
+      word: 'surprised',
+      translation: 'удивлённый',
+      imageSrc: `${basePath}/surprised.jpg`,
+      audioSrc: `${basePath}/surprised.wav`,
+    },
+    {
+      word: 'scared',
+      translation: 'испуганный',
+      imageSrc: `${basePath}/scared.jpg`,
+      audioSrc: `${basePath}/scared.wav`,
+    },
+    {
+      word: 'smile',
+      translation: 'улыбка',
+      imageSrc: `${basePath}/smile.jpg`,
+      audioSrc: `${basePath}/smile.wav`,
+    },
+    {
+      word: 'laugh',
+      translation: 'смех',
+      imageSrc: `${basePath}/laugh.jpg`,
+      audioSrc: `${basePath}/laugh.wav`,
+    },
+  ],
+  [
+    {
+      word: 'cranberry',
+      translation: 'клюква',
+      imageSrc: `${basePath}/cranberry.jpg`,
+      audioSrc: `${basePath}/cranberry.wav`,
+    },
+    {
+      word: 'blueberry',
+      translation: 'черника',
+      imageSrc: `${basePath}/blueberry.jpg`,
+      audioSrc: `${basePath}/blueberry.wav`,
+    },
+    {
+      word: 'elderberry',
+      translation: 'бузина',
+      imageSrc: `${basePath}/elderberry.jpg`,
+      audioSrc: `${basePath}/elderberry.wav`,
+    },
+    {
+      word: 'gooseberry',
+      translation: 'крыжовник',
+      imageSrc: `${basePath}/gooseberry.jpg`,
+      audioSrc: `${basePath}/gooseberry.wav`,
+    },
+    {
+      word: 'currant',
+      translation: 'клюква',
+      imageSrc: `${basePath}/currant.jpg`,
+      audioSrc: `${basePath}/currant.wav`,
+    },
+    {
+      word: 'strawberry',
+      translation: 'клубника',
+      imageSrc: `${basePath}/strawberry.jpg`,
+      audioSrc: `${basePath}/strawberry.wav`,
+    },
+    {
+      word: 'blackberry',
+      translation: 'ежевика',
+      imageSrc: `${basePath}/blackberry.jpg`,
+      audioSrc: `${basePath}/blackberry.wav`,
+    },
+    {
+      word: 'physalis',
+      translation: 'физалис',
+      imageSrc: `${basePath}/physalis.jpg`,
+      audioSrc: `${basePath}/physalis.wav`,
+    },
+  ],
+  [
+    {
+      word: 'bed',
+      translation: 'кровать',
+      imageSrc: `${basePath}/bed.jpg`,
+      audioSrc: `${basePath}/bed.wav`,
+    },
+    {
+      word: 'sofa',
+      translation: 'диван',
+      imageSrc: `${basePath}/sofa.jpg`,
+      audioSrc: `${basePath}/sofa.wav`,
+    },
+    {
+      word: 'carpet',
+      translation: 'ковёр',
+      imageSrc: `${basePath}/carpet.jpg`,
+      audioSrc: `${basePath}/carpet.wav`,
+    },
+    {
+      word: 'chair',
+      translation: 'стул',
+      imageSrc: `${basePath}/chair.jpg`,
+      audioSrc: `${basePath}/chair.wav`,
+    },
+    {
+      word: 'table',
+      translation: 'стол',
+      imageSrc: `${basePath}/table.jpg`,
+      audioSrc: `${basePath}/table.wav`,
+    },
+    {
+      word: 'armchair',
+      translation: 'кресло',
+      imageSrc: `${basePath}/armchair.jpg`,
+      audioSrc: `${basePath}/armchair.wav`,
+    },
+    {
+      word: 'picture',
+      translation: 'картина',
+      imageSrc: `${basePath}/picture.jpg`,
+      audioSrc: `${basePath}/picture.wav`,
+    },
+    {
+      word: 'floor lamp',
+      translation: 'напольная лампа',
+      imageSrc: `${basePath}/floorlamp.jpg`,
+      audioSrc: `${basePath}/floorlamp.wav`,
+    },
+  ],
+];
