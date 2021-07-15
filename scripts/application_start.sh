@@ -2,10 +2,10 @@
 #!/bin/bash
 
 #give permission for everything in the express-app directory
-sudo chmod -R 777 /EFKServer/english-for-kids-server
+sudo chmod -R 777 EFKServer/english-for-kids-server
 
 #navigate into our working directory where we have all our github files
-cd /EFKServer/english-for-kids-server
+cd EFKServer/english-for-kids-server
 
 #add npm and node to path
 export NVM_DIR="$HOME/.nvm"	

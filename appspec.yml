@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /EFKServer/english-for-kids-server
+    destination: EFKServer/english-for-kids-server
 hooks:
   ApplicationStop:
     - location: scripts/application_stop.sh
