@@ -54,7 +54,8 @@ app.post('/category', jsonParser, async (req: Request, res: Response) => {
 app.put('/category/:id', async (req: Request, res: Response) => {
   const { id } = req.params;
   await categoryModel.updateOne({ uniqueKey: id }, req.body);
-  res.send(`Check DB ${id} updated`);
+  const updatedItem = await categoryModel.findOne({ uniqueKey: req.body.uniqueKey });
+  res.send(updatedItem);
 });
 
 app.delete('/category/:id', async (req: Request, res: Response) => {
