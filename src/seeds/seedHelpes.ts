@@ -1,4 +1,4 @@
-const basePath = 'http://18.116.33.61:3005';
+const basePath = 'https://codefergog.tk';
 
 export const categories = [
   {
