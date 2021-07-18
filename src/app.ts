@@ -85,6 +85,8 @@ app.post('/upload', (req: Request, res: Response) => {
   }
 
   if (req.files) {
+    console.log(req.files);
+
     for (const key in req.files) {
       const fileName = req.files[key] as fileUpload.UploadedFile;
       HandlerUploadFiles(fileName);
