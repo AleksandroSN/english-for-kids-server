@@ -4,6 +4,7 @@ import { Request, Response, Application } from 'express';
 import { categoryModel } from './models/category';
 import { PaginationAndLimit } from './utils/pagination-and-limit';
 import fileUpload from 'express-fileupload';
+import { HandlerUploadFiles } from './utils/handlerUploadFiles';
 const uri = `mongodb+srv://${process.env.DB_LOG}:${process.env.DB_PASS}@clusterrss.azk0u.mongodb.net/EFKDatabase?retryWrites=true&w=majority`;
 const mongoose = require('mongoose');
 const cors = require('cors');
@@ -13,7 +14,6 @@ const jsonParser = express.json();
 const PORT = process.env.PORT || 3001;
 const staticImages = path.resolve(__dirname, '../public/img');
 const staticAudios = path.resolve(__dirname, '../public/audio');
-const audioExt = ['wav', 'mp3'];
 
 app.use(
   cors({
@@ -22,6 +22,7 @@ app.use(
 );
 app.use(fileUpload());
 app.use(jsonParser);
+app.use(express.urlencoded({ extended: true }));
 app.use('/', express.static(staticImages));
 app.use('/', express.static(staticAudios));
 
@@ -79,17 +80,17 @@ app.delete('/category/:id', async (req: Request, res: Response) => {
 });
 
 app.post('/upload', (req: Request, res: Response) => {
-  console.log(req.files);
-  const file = req!.files!.file as fileUpload.UploadedFile;
-  const filename = file.name;
-  const fileExt = filename.substr(filename.lastIndexOf('.') + 1);
-  const path = audioExt.indexOf(fileExt) === -1 ? staticImages : staticAudios;
-  file.mv(`${path}/${filename}`, (err) => {
-    if (err) {
-      res.status(500).send({ message: 'File upload failed', code: 500 });
+  if (!req.files || Object.keys(req.files).length === 0) {
+    return res.status(400).send('No files were uploaded.');
+  }
+
+  if (req.files) {
+    for (const key in req.files) {
+      const fileName = req.files[key] as fileUpload.UploadedFile;
+      HandlerUploadFiles(fileName);
     }
-    res.status(200).send({ message: 'File Uploaded', code: 200 });
-  });
+    res.status(200).send({ message: 'File(s) Uploaded', code: 200 });
+  }
 });
 
 app.listen(PORT, () => {

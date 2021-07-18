@@ -1,4 +1,4 @@
-import { model, Schema } from "mongoose";
+import { model, Schema } from 'mongoose';
 
 interface Word {
   word: string;
@@ -9,14 +9,14 @@ interface Word {
 
 export interface Category {
   categoryName: string;
-  image: string;
+  imageSrc: string;
   uniqueKey: string;
   cards: Word[];
 }
 
 const categorySchema = new Schema<Category>({
   categoryName: { type: String, required: true },
-  image: { type: String, required: true },
+  imageSrc: { type: String, required: true },
   uniqueKey: { type: String, required: true },
   cards: [
     {
@@ -28,4 +28,4 @@ const categorySchema = new Schema<Category>({
   ],
 });
 
-export const categoryModel = model<Category>("category", categorySchema);
+export const categoryModel = model<Category>('category', categorySchema);

@@ -2,43 +2,43 @@ const basePath = 'https://codefergog.tk';
 
 export const categories = [
   {
-    name: 'Action (set A)',
-    image: `${basePath}/cry.jpg`,
+    categoryName: 'Action (set A)',
+    imageSrc: `${basePath}/cry.jpg`,
     uniqueKey: '1',
   },
   {
-    name: 'Action (set B)',
-    image: `${basePath}/point.jpg`,
+    categoryName: 'Action (set B)',
+    imageSrc: `${basePath}/point.jpg`,
     uniqueKey: '2',
   },
   {
-    name: 'Animal (set A)',
-    image: `${basePath}/cat.jpg`,
+    categoryName: 'Animal (set A)',
+    imageSrc: `${basePath}/cat.jpg`,
     uniqueKey: '3',
   },
   {
-    name: 'Action (set B)',
-    image: `${basePath}/chicken.jpg`,
+    categoryName: 'Action (set B)',
+    imageSrc: `${basePath}/chicken.jpg`,
     uniqueKey: '4',
   },
   {
-    name: 'Clothes',
-    image: `${basePath}/fish.jpg`,
+    categoryName: 'Clothes',
+    imageSrc: `${basePath}/fish.jpg`,
     uniqueKey: '5',
   },
   {
-    name: 'Emotions',
-    image: `${basePath}/fly.jpg`,
+    categoryName: 'Emotions',
+    imageSrc: `${basePath}/fly.jpg`,
     uniqueKey: '6',
   },
   {
-    name: 'Berries',
-    image: `${basePath}/hug.jpg`,
+    categoryName: 'Berries',
+    imageSrc: `${basePath}/hug.jpg`,
     uniqueKey: '7',
   },
   {
-    name: 'Furniture',
-    image: `${basePath}/jump.jpg`,
+    categoryName: 'Furniture',
+    imageSrc: `${basePath}/jump.jpg`,
     uniqueKey: '8',
   },
 ];
