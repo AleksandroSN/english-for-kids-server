@@ -1,8 +1,10 @@
-require('dotenv').config();
-import { categoryModel } from '../models/category';
-import { categories, cards } from './seedHelpes';
+import { categoryModel } from "../models/category";
+import { categories, cards } from "./seedHelpes";
+
+require("dotenv").config();
+
 const uri = `mongodb+srv://${process.env.DB_LOG}:${process.env.DB_PASS}@clusterrss.azk0u.mongodb.net/EFKDatabase?retryWrites=true&w=majority`;
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 async function run(): Promise<void> {
   await mongoose
@@ -12,7 +14,7 @@ async function run(): Promise<void> {
       useUnifiedTopology: true,
     })
     .then(() => {
-      console.log('Mongo is OPEN');
+      console.log("Mongo is OPEN");
     });
 
   await categoryModel.deleteMany({});
