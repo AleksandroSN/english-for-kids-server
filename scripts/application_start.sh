@@ -16,4 +16,4 @@ export NVM_DIR="$HOME/.nvm"
 npm install
 
 #start our node app in the background
-pm2 start all --watch
+sudo pm2 start all --watch
