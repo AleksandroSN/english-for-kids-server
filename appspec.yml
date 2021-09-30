@@ -2,7 +2,14 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: EFKServer/english-for-kids-server
+    destination: /home/ubuntu/EFKServer/english-for-kids-server
+permissions:
+  - object: /opt/projectx
+    owner: ubuntu
+    group: ubuntu
+    type:
+      - directory
+      - file    
 hooks:
   ApplicationStop:
     - location: scripts/application_stop.sh
