@@ -5,14 +5,11 @@
 # . ~/.nvm/nvm.sh
 # nvm install node
 
-# remove work folder
-  DIR="/home/ubuntu/EFKServer/english-for-kids-server"
-  sudo rm -rf ${DIR}
-
 #create our working directory if it doesnt exist
  DIR="/home/ubuntu/EFKServer/english-for-kids-server"
  if [ -d "$DIR" ]; then
-   echo "${DIR} exists"
+   sudo rm -rf ${DIR}
+   mkdir ${DIR}
  else
    echo "Creating ${DIR} directory"
    mkdir ${DIR}
