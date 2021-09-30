@@ -5,13 +5,17 @@
 # . ~/.nvm/nvm.sh
 # nvm install node
 
+# remove work folder
+  DIR="/home/ubuntu/EFKServer/english-for-kids-server"
+  sudo rm -rf ${DIR}
+
 #create our working directory if it doesnt exist
-# DIR="EFKServer/english-for-kids-server"
-# if [ -d "$DIR" ]; then
-#   echo "${DIR} exists"
-# else
-#   echo "Creating ${DIR} directory"
-#   mkdir ${DIR}
+ DIR="/home/ubuntu/EFKServer/english-for-kids-server"
+ if [ -d "$DIR" ]; then
+   echo "${DIR} exists"
+ else
+   echo "Creating ${DIR} directory"
+   mkdir ${DIR}
 # fi
 # if [ -f .env ]; then
 #   export $(echo $(cat .env | sed 's/#.*//g'| xargs) | envsubst)
