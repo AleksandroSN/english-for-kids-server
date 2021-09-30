@@ -16,4 +16,4 @@ cd /home/ubuntu/EFKServer/english-for-kids-server
 npm install
 
 #start our node app in the background
-sudo pm2 start all --watch
+pm2 start all --watch
