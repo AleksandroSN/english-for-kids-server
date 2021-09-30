@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/EFKServer/
+    destination: /home/ubuntu/EFKServer/english-for-kids-server
 permissions:
   - object: /opt/projectx
     owner: ubuntu
