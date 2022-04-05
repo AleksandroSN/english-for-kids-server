@@ -1,4 +1,4 @@
-const basePath = 'https://codefergog.tk';
+const basePath = 'https://engilsh-for-kids.herokuapp.com/';
 
 export const categories = [
   {

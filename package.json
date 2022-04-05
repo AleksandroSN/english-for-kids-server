@@ -5,6 +5,7 @@
   "main": "app.ts",
   "scripts": {
     "start": "ts-node ./src/app.ts",
+    "seed": "ts-node ./src/seeds/baseData.ts",
     "watch": "nodemon --delay 500ms",
     "format": "prettier --write src/**/*.ts",
     "lint": "eslint src/**/*.ts"

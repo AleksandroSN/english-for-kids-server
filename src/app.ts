@@ -35,6 +35,10 @@ mongoose
     console.log('Mongo is OPEN');
   });
 
+app.get('/', (req: Request, res: Response) => {
+  res.send('<h1>WORK!!</h1>')
+})
+
 app.get('/category', async (req: Request, res: Response) => {
   const { page, limit } = req.query;
   const categories = await categoryModel.find({});
