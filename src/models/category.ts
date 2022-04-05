@@ -28,4 +28,4 @@ const categorySchema = new Schema<Category>({
   ],
 });
 
-export const categoryModel = model<Category>('category', categorySchema);
+export const CategoryModel = model<Category>('category', categorySchema);
